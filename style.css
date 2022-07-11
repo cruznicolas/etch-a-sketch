@@ -1,0 +1,39 @@
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.container {
+	display: flex;
+	flex-direction:  column;
+	width:  80vh;
+	height:  80vh;
+	justify-content: space-between;
+	align-content: space-between;
+	padding: 10px;
+	gap: 5px;
+}
+
+div.row {
+	background-color: white;
+	display:  flex;
+	flex: 1;
+	justify-content: space-between;
+	align-content: space-between;
+	gap: 5px;
+
+	
+	
+}
+
+div.cell {
+	background-color: white;
+	border: 1px solid red;
+	flex:  1;	
+}
+
+div.cell .hovered {
+	background-color: blue;
+}

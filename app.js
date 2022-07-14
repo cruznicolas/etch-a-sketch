@@ -14,13 +14,16 @@ function createGrid (size, container) {
 	}
 }
 
+
 function getSize () {
 	size = prompt();
 }
 
 function clearGrid () {
-	
+	const cells = document.querySelectorAll('.cell');
+	cells.forEach(cell => cell.classList.remove("hovered"));
 }
+
 
 function tint() {
 this.classList.add("hovered");
@@ -32,10 +35,6 @@ createGrid(10,gridcontainer);
 // button = document.querySelector('button');
 // button.addEventListener('click', function () {let size = prompt("Digite tamaño"); createGrid(size =5,gridcontainer);let cells = document.querySelectorAll('.cell');} );
 
-
-
-
-
-//cells.forEach(cell => cell.addEventListener('mouseover', tint()))
-
-
+buttonClear = document.querySelector('button.clear');
+console.log(buttonClear);
+buttonClear.addEventListener('click', clearGrid);

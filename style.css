@@ -25,8 +25,8 @@ div.row {
 div.cell {
 	background-color: white;
 	flex:  1;	
-	margin: 1px;
-	margin-co
+	margin: 0;
+	border:  solid 0.5px darkgray;
 }
 
 div.cell.hovered {

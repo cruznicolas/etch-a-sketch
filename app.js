@@ -30,7 +30,10 @@ this.classList.add("hovered");
 }
 
 function changeSize() {
-	let newSize = prompt("Enter new size");
+	let newSize = 101;
+	while (newSize > 100 || newSize < 2) {
+		newSize = prompt("Enter new size (between 2 and 100");
+	}
 	createGrid(newSize, gridcontainer);
 }
 

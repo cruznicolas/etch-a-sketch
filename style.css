@@ -11,7 +11,8 @@ body{
 	flex-direction:  column;
 	width:  80vh;
 	height:  80vh;
-	padding: 10px
+	padding: 1px;
+	border:  3px solid darkgray;
 }
 
 div.row {
@@ -26,9 +27,27 @@ div.cell {
 	background-color: white;
 	flex:  1;	
 	margin: 0;
-	border:  solid 0.5px darkgray;
 }
 
 div.cell.hovered {
 	background-color: blue;
+}
+
+.controls {
+	padding: 10px;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+
+}
+
+button {
+	flex:  1;
+	width: 25vw;
+	font-family: sans-serif;
+	font-size: large;
+	background-color: darkslategray;
+	color: white;
+	font-weight: 900;
 }

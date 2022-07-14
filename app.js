@@ -29,12 +29,22 @@ function tint() {
 this.classList.add("hovered");
 }
 
-gridcontainer = document.querySelector('.container');
-createGrid(10,gridcontainer);
+function changeSize() {
+	let newSize = prompt("Enter new size");
+	createGrid(newSize, gridcontainer);
+}
+
+
+const gridcontainer = document.querySelector('.container');
+let size = 10;
+createGrid(size,gridcontainer);
 
 // button = document.querySelector('button');
 // button.addEventListener('click', function () {let size = prompt("Digite tamaño"); createGrid(size =5,gridcontainer);let cells = document.querySelectorAll('.cell');} );
 
 buttonClear = document.querySelector('button.clear');
-console.log(buttonClear);
 buttonClear.addEventListener('click', clearGrid);
+
+buttonSize = document.querySelector('button.size');
+buttonSize.addEventListener('click', changeSize);
+
